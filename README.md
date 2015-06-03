@@ -8,28 +8,28 @@ Create tables witht the attached SQL file and import the csv with the code below
 ownload the latest CSV and import.
 
 ```sql
-COPY AllstarFull FROM '/path/to/AllstarFull.csv' DELIMITER ',' CSV;
-COPY Appearances FROM '/path/to/Appearances.csv' DELIMITER ',' CSV;
-COPY AwardsManagers FROM '/path/to/AwardsManagers.csv' DELIMITER ',' CSV;
-COPY AwardsPlayers FROM '/path/to/AwardsPlayers.csv' DELIMITER ',' CSV;
-COPY AwardsShareManagers FROM '/path/to/AwardsShareManagers.csv' DELIMITER ',' CSV;
-COPY AwardsSharePlayers FROM '/path/to/AwardsSharePlayers.csv' DELIMITER ',' CSV;
-COPY Batting FROM '/path/to/Batting.csv' DELIMITER ',' CSV;
-COPY BattingPost FROM '/path/to/BattingPost.csv' DELIMITER ',' CSV;
-COPY Fielding FROM '/path/to/Fielding.csv' DELIMITER ',' CSV;
-COPY FieldingOF FROM '/path/to/FieldingOF.csv' DELIMITER ',' CSV;
-COPY FieldingPost FROM '/path/to/FieldingPost.csv' DELIMITER ',' CSV;
-COPY HallOfFame FROM '/path/to/HallOfFame.csv' DELIMITER ',' CSV;
-COPY Managers FROM '/path/to/Managers.csv' DELIMITER ',' CSV;
-COPY ManagersHalf FROM '/path/to/ManagersHalf.csv' DELIMITER ',' CSV;
-COPY Master FROM '/path/to/Master.csv' DELIMITER ',' CSV;
-COPY Pitching FROM '/path/to/Pitching.csv' DELIMITER ',' CSV;
-COPY PitchingPost FROM '/path/to/PitchingPost.csv' DELIMITER ',' CSV;
-COPY Salaries FROM '/path/to/Salaries.csv' DELIMITER ',' CSV;
-COPY Schools FROM '/path/to/Schools.csv' DELIMITER ',' CSV;
-COPY SchoolsPlayers FROM '/path/to/SchoolsPlayers.csv' DELIMITER ',' CSV;
-COPY SeriesPost FROM '/path/to/SeriesPost.csv' DELIMITER ',' CSV;
-COPY Teams FROM '/path/to/Teams.csv' DELIMITER ',' CSV;
-COPY TeamsFranchises FROM '/path/to/TeamsFranchises.csv' DELIMITER ',' CSV;
-COPY TeamsHalf FROM '/path/to/TeamsHalf.csv' DELIMITER ',' CSV;
+COPY AllstarFull FROM '/path/to/AllstarFull.csv' DELIMITER ',' CSV HEADER;
+COPY Appearances FROM '/path/to/Appearances.csv' DELIMITER ',' CSV HEADER;
+COPY AwardsManagers FROM '/path/to/AwardsManagers.csv' DELIMITER ',' CSV HEADER;
+COPY AwardsPlayers FROM '/path/to/AwardsPlayers.csv' DELIMITER ',' CSV HEADER;
+COPY AwardsShareManagers FROM '/path/to/AwardsShareManagers.csv' DELIMITER ',' CSV HEADER;
+COPY AwardsSharePlayers FROM '/path/to/AwardsSharePlayers.csv' DELIMITER ',' CSV HEADER;
+COPY Batting FROM '/path/to/Batting.csv' DELIMITER ',' CSV HEADER;
+COPY BattingPost FROM '/path/to/BattingPost.csv' DELIMITER ',' CSV HEADER;
+COPY CollegePlaying FROM '/path/to/CollegePlaying.csv' DELIMITER ',' CSV HEADER;
+COPY Fielding FROM '/path/to/Fielding.csv' DELIMITER ',' CSV HEADER;
+COPY FieldingOF FROM '/path/to/FieldingOF.csv' DELIMITER ',' CSV HEADER;
+COPY FieldingPost FROM '/path/to/FieldingPost.csv' DELIMITER ',' CSV HEADER;
+COPY HallOfFame FROM '/path/to/HallOfFame.csv' DELIMITER ',' CSV HEADER;
+COPY Managers FROM '/path/to/Managers.csv' DELIMITER ',' CSV HEADER;
+COPY ManagersHalf FROM '/path/to/ManagersHalf.csv' DELIMITER ',' CSV HEADER;
+COPY Master FROM '/path/to/Master.csv' DELIMITER ',' CSV HEADER;
+COPY Pitching FROM '/path/to/Pitching.csv' DELIMITER ',' CSV HEADER;
+COPY PitchingPost FROM '/path/to/PitchingPost.csv' DELIMITER ',' CSV HEADER;
+COPY Salaries FROM '/path/to/Salaries.csv' DELIMITER ',' CSV HEADER;
+COPY Schools FROM '/path/to/Schools.csv' DELIMITER ',' CSV HEADER;
+COPY SeriesPost FROM '/path/to/SeriesPost.csv' DELIMITER ',' CSV HEADER;
+COPY Teams FROM '/path/to/Teams.csv' DELIMITER ',' CSV HEADER;
+COPY TeamsFranchises FROM '/path/to/TeamsFranchises.csv' DELIMITER ',' CSV HEADER;
+COPY TeamsHalf FROM '/path/to/TeamsHalf.csv' DELIMITER ',' CSV HEADER;
 ```

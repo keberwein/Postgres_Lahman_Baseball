@@ -183,6 +183,19 @@ PRIMARY KEY (yearID,round,playerID)
 );
 -- --------------------------------------------------------
 -- 
+-- Table structure for table CollegePlaying
+-- 
+-- Creation: Dec 06, 2013 at 06:43 AM
+-- 
+DROP TABLE IF EXISTS CollegePlaying;
+CREATE TABLE IF NOT EXISTS CollegePlaying (
+playerID varchar(10) NOT NULL,
+schoolID varchar(15) NOT NULL,
+yearID int NOT NULL,
+PRIMARY KEY (playerID, schoolID, yearID)
+);
+-- --------------------------------------------------------
+-- 
 -- Table structure for table Fielding
 -- 
 -- Creation: Dec 06, 2013 at 06:43 AM
