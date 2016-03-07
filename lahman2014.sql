@@ -1,12 +1,10 @@
 ﻿BEGIN TRANSACTION;
 -- 
 -- Database: lahman_bbdb
--- 
+-- Updated: 2016-03-07
 -- --------------------------------------------------------
 -- 
 -- Table structure for table AllstarFull
--- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS AllstarFull;
 CREATE TABLE IF NOT EXISTS AllstarFull (
@@ -24,7 +22,6 @@ PRIMARY KEY (playerID,yearID,gameNum)
 -- 
 -- Table structure for table Appearances
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS Appearances;
 CREATE TABLE IF NOT EXISTS Appearances (
@@ -55,7 +52,6 @@ PRIMARY KEY (yearID,teamID,playerID)
 -- 
 -- Table structure for table AwardsManagers
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS AwardsManagers;
 CREATE TABLE IF NOT EXISTS AwardsManagers (
@@ -71,7 +67,6 @@ PRIMARY KEY (yearID,awardID,lgID,playerID)
 -- 
 -- Table structure for table AwardsPlayers
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS AwardsPlayers;
 CREATE TABLE IF NOT EXISTS AwardsPlayers (
@@ -87,7 +82,6 @@ PRIMARY KEY (yearID,awardID,lgID,playerID)
 -- 
 -- Table structure for table AwardsShareManagers
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS AwardsShareManagers;
 CREATE TABLE IF NOT EXISTS AwardsShareManagers (
@@ -104,7 +98,6 @@ PRIMARY KEY (awardID,yearID,lgID,playerID)
 -- 
 -- Table structure for table AwardsSharePlayers
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS AwardsSharePlayers;
 CREATE TABLE IF NOT EXISTS AwardsSharePlayers (
@@ -121,7 +114,6 @@ PRIMARY KEY (awardID,yearID,lgID,playerID)
 -- 
 -- Table structure for table Batting
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS Batting;
 CREATE TABLE IF NOT EXISTS Batting (
@@ -153,7 +145,6 @@ PRIMARY KEY (playerID,yearID,stint)
 -- 
 -- Table structure for table BattingPost
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS BattingPost;
 CREATE TABLE IF NOT EXISTS BattingPost (
@@ -185,7 +176,6 @@ PRIMARY KEY (yearID,round,playerID)
 -- 
 -- Table structure for table CollegePlaying
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS CollegePlaying;
 CREATE TABLE IF NOT EXISTS CollegePlaying (
@@ -198,7 +188,6 @@ PRIMARY KEY (playerID, schoolID, yearID)
 -- 
 -- Table structure for table Fielding
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS Fielding;
 CREATE TABLE IF NOT EXISTS Fielding (
@@ -226,7 +215,6 @@ PRIMARY KEY (playerID,yearID,stint,POS)
 -- 
 -- Table structure for table FieldingOF
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS FieldingOF;
 CREATE TABLE IF NOT EXISTS FieldingOF (
@@ -242,7 +230,6 @@ PRIMARY KEY (playerID,yearID,stint)
 -- 
 -- Table structure for table FieldingPost
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS FieldingPost;
 CREATE TABLE IF NOT EXISTS FieldingPost (
@@ -269,7 +256,6 @@ PRIMARY KEY (playerID,yearID,round,POS)
 -- 
 -- Table structure for table HallOfFame
 -- 
--- Creation: Dec 06, 2013 at 10:48 AM
 -- 
 DROP TABLE IF EXISTS HallOfFame;
 CREATE TABLE IF NOT EXISTS HallOfFame (
@@ -288,7 +274,6 @@ PRIMARY KEY (playerID,yearid,votedBy)
 -- 
 -- Table structure for table Managers
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS Managers;
 CREATE TABLE IF NOT EXISTS Managers (
@@ -308,7 +293,6 @@ PRIMARY KEY (yearID,teamID,inseason)
 -- 
 -- Table structure for table ManagersHalf
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS ManagersHalf;
 CREATE TABLE IF NOT EXISTS ManagersHalf (
@@ -328,7 +312,6 @@ PRIMARY KEY (yearID,teamID,playerID,half)
 -- 
 -- Table structure for table Master
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS Master;
 CREATE TABLE IF NOT EXISTS Master (
@@ -362,7 +345,6 @@ PRIMARY KEY (playerID)
 -- 
 -- Table structure for table Pitching
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS Pitching;
 CREATE TABLE IF NOT EXISTS Pitching (
@@ -402,7 +384,6 @@ PRIMARY KEY (playerID,yearID,stint)
 -- 
 -- Table structure for table PitchingPost
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS PitchingPost;
 CREATE TABLE IF NOT EXISTS PitchingPost (
@@ -442,7 +423,6 @@ PRIMARY KEY (playerID,yearID,round)
 -- 
 -- Table structure for table Salaries
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS Salaries;
 CREATE TABLE IF NOT EXISTS Salaries (
@@ -457,7 +437,6 @@ PRIMARY KEY (yearID,teamID,lgID,playerID)
 -- 
 -- Table structure for table Schools
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS Schools;
 CREATE TABLE IF NOT EXISTS Schools (
@@ -472,7 +451,6 @@ PRIMARY KEY (schoolID)
 -- 
 -- Table structure for table SeriesPost
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS SeriesPost;
 CREATE TABLE IF NOT EXISTS SeriesPost (
@@ -491,7 +469,6 @@ PRIMARY KEY (yearID,round)
 -- 
 -- Table structure for table Teams
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS Teams;
 CREATE TABLE IF NOT EXISTS Teams (
@@ -550,7 +527,6 @@ PRIMARY KEY (yearID,lgID,teamID)
 -- 
 -- Table structure for table TeamsFranchises
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS TeamsFranchises;
 CREATE TABLE IF NOT EXISTS TeamsFranchises (
@@ -564,7 +540,6 @@ PRIMARY KEY (franchID)
 -- 
 -- Table structure for table TeamsHalf
 -- 
--- Creation: Dec 06, 2013 at 06:43 AM
 -- 
 DROP TABLE IF EXISTS TeamsHalf;
 CREATE TABLE IF NOT EXISTS TeamsHalf (
