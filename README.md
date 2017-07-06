@@ -1,4 +1,4 @@
-# Postgres_Lahman_Baseball
+# Baseball Databank for PostgreSQL
 A PostgreSQL table schema for the 2015 Lahman Baseball Database
 
 This schema will work for importing the `csv` version of Sean Lahman's baseball database to PostgreSQL. Sean makes slight changes to the database each year. I'll do my best to keep this current.
