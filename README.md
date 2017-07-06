@@ -1,11 +1,22 @@
 # Postgres_Lahman_Baseball
 A PostgreSQL table schema for the 2015 Lahman Baseball Database
 
-This schema will work for importing the csv version on Sean Lahman's baseball database to Postgres. This works wiht the 2014 version. Sean makes slight changes to the database each year. I'll do my best to keep this current.
+This schema will work for importing the `csv` version of Sean Lahman's baseball database to PostgreSQL. Sean makes slight changes to the database each year. I'll do my best to keep this current.
 
-Create tables with the attached SQL file and import the csv with the code below or by the "import" function in PgAdmin.
+Create tables with the attached SQL file and import the `.csv` files with the code below or by the "import" function in PgAdmin.
 
-Download the latest csv files and import.
+[Download](https://github.com/chadwickbureau/baseballdatabank) the latest `.csv` files.
+
+
+## Load Data
+The following loop requires `psql` installed on Linux/OSx or Cygwin running on Windows. If you don't have Cygwin, see the long-form below.
+
+```sql
+for x in $(ls /path/to/files/file_name*.csv); 
+do psql -c "COPY table_name FROM '$x' CSV HEADER" db_name; done
+
+```
+
 
 ```sql
 COPY allstarfull FROM '/path/to/AllstarFull.csv' DELIMITER ',' CSV HEADER;
